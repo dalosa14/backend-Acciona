@@ -18,6 +18,6 @@ app.post("/addFavProfilesList", (req, res) => {
 app.get("/getFavProfilesLists", (req, res) => {
     res.send({success: true,data:tempProfiles})
 });
-app.listen(3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("servidor en el 3000");
 });
